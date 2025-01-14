@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75 HARD Challenge Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>75 HARD Challenge Tracker</h1>
+
+        <div class="progress-container">
+            <span id="progressText"></span>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Date Navigation -->
+        <div class="date-navigation">
+            <button id="prev5Days">&larr; Skip 5 Days Back</button>
+            <button id="prevDay">&larr; Previous Day</button>
+            <span id="currentDate"></span>
+            <button id="nextDay">Next Day &rarr;</button>
+            <button id="next5Days">Skip 5 Days Forward &rarr;</button>
+        </div>
+
+        <!-- Calendar Container -->
+        <div id="calendar"></div>
+
+        <!-- Challenge Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Participant</th>
+                    <th>3L of Water</th>
+                    <th>10 Pages of a Book</th>
+                    <th>2×45min Exercise</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody id="challengeTable"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
